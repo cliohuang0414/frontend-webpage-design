@@ -1,0 +1,27 @@
+
+
+body {
+    font-family: "Noto Sans TC", Arial, Helvetica, sans-serif;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-foot {
+    display: none;
+}
+
+.nav-ul {
+    display: flex;
+}
+
+.nav-btnWrap {
+    display: none;
+}
