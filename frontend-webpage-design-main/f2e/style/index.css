@@ -1,0 +1,164 @@
+.root {
+    --primary-color: #24b4d7;
+    --transparent-white: rgba(255,255,255,0.4)
+}
+
+.ani-fade {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.ani-delay-5 {
+    animation-delay: 5s;
+}
+
+.ani-delay-10 {
+    animation-delay: 10s;
+}
+
+.ani-delay-15 {
+    animation-delay: 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+}
+
+.ani-textblend-color {
+    animation-name: textblend-color;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes textblend-color {
+    0% {
+        color: #fff;
+    }
+    0% {
+        color: #24b4d7;
+    }
+    50% {
+        color: #24b4d7;
+    }
+    55% {
+        color: #fff;
+    }
+    100% {
+        color: #fff;
+    }
+}
+
+body {
+    font-family: "Noto Sans TC", serif;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-foot {
+    display: none;
+}
+
+.header-fix {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.nav-ul {
+    display: flex;
+}
+
+.nav-btnWrap {
+    display: none;
+}
+
+.nav-link {
+    
+    font-weight: 600;
+    padding-right: 15px;
+    color: #24b4d7;
+    text-decoration: none;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    aspect-ratio: 16/9;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-head {
+    text-align: center;
+    color: #24b4d7;
+    padding: 5rem;
+    z-index: 2;
+    position: relative;
+    background-color: rgba(255,255,255,.4);
+    background-image: linear-gradient(
+        -45deg,
+        rgba(225,225,225,.4) 0%,
+        rgba(225,225,225,.4) 25%,
+        transparent 26%,
+        transparent 50%,
+        rgba(225,225,225,.4) 51%,
+        rgba(225,225,225,.4) 75%,
+        transparent 76%,
+        transparent 100%,
+    );
+    background-size: 7px,7px;
+}
+
+.banner-body {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.banner-title {
+    font-size: 3.5rem;
+    font-weight: 1000;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.banner-subtitle {
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.banner-description {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
