@@ -107,7 +107,15 @@
   background-size: 7px 7px;
 }
 
+.h-text-center {
+  text-align: center;
+}
+
 /* reset -------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Noto Sans TC", serif;
@@ -429,4 +437,66 @@ color: #fff;
   font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.4);
   margin-top: 1rem;
+}
+
+/*table------------------------*/
+
+.table {
+  width: 100%;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+.table th {
+  font-weight: 600;
+}
+
+.table-border th,
+.table-border td {
+  border: solid 1px #ccc;
+}
+
+.table-stripe thead {
+  background-color: #eee;
+}
+
+.table-stripe tbody tr:nth-child(even) {
+  background-color: #eee;
+}
+
+.table-hover tbody tr {
+  transition-duration: .3s;
+}
+
+.table-hover tbody tr:hover {
+ background-color: #c4e4ee; 
+}
+
+.table-noWrap th,
+.table-noWrap td {
+  white-space: nowrap;
+}
+
+/*footer-------------------------*/
+
+.footer {
+  background-color: #333;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer-title {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.footer-description {
+  color: rgba(255, 255, 255, .5);
+  font-size: .9rem;
+  line-height: 1.5;
 }
