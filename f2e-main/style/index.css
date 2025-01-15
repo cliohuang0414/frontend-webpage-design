@@ -5,6 +5,8 @@
 :root {
   --primary-color: #24b4d7;
   --opacity-color: rgba(255, 255, 255, .3);
+  --width-m: 1200px;
+  --width-s: 1000px;
 }
 
 /* animation -------------------- */
@@ -70,11 +72,11 @@
 /*helper---------------------*/
 
 .h-container-m {
-  max-width: 1200px;
+  max-width: var(--width-m);
 }
 
-.h-container-m {
-  max-width: 1000px;
+.h-container-s {
+  max-width: var(--width-s);
 }
 
 .h-mx-auto {
@@ -499,4 +501,53 @@ color: #fff;
   color: rgba(255, 255, 255, .5);
   font-size: .9rem;
   line-height: 1.5;
+}
+
+/*aside------------------------*/
+
+.aside {
+  position: fixed;
+  bottom: 300px;
+  margin-left: calc( var(--width-m) + 30px );
+}
+
+/*social---------------------------*/
+
+.social {
+  display: block;
+  padding: 1rem 0.6rem;
+  color: #fff;
+}
+
+.social-ig {
+  background-image: radial-gradient(circle at 30% 110%,
+  #ffdb8b 0%,
+  #ee653d 25%,
+  #d42e81 50%,
+  #a237b6 75%,
+  #3e57bc 100%);;
+}
+
+.social-fb {
+  background-color: #0864f7;
+}
+
+.social-x {
+  background-color: #000;
+}
+
+.social-up {
+  display: block;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 1rem 0.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header-body {
+    display: none;
+  }
+
+  .header-foot {
+    display: block;
+  }
 }
